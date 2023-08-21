@@ -4,14 +4,16 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                withMaven(maven: 'mvn-3-9-4') {
+                withMaven {
                     sh 'mvn validate'
                 }
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                withMaven {
+                    sh 'mvn test'
+                }
             }
         }
         stage('Deploy') {
