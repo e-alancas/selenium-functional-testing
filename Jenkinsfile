@@ -4,7 +4,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                withMaven(maven: 'mvn-3-9-4') {
+                    sh 'mvn validate'
+                }
             }
         }
         stage('Test') {
