@@ -4,14 +4,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                withMaven {
+                withMaven() {
                     sh 'mvn clean verify'
                 }
             }
         }
         stage('Test') {
             steps {
-                withMaven {
+                withMaven() {
                     echo 'testing....'
                 }
             }
