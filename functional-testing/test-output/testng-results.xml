@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-21T14:27:50 CST" name="Default Suite" finished-at="2023-08-21T14:27:59 CST" duration-ms="9413">
+    <groups>
+      <group name="orderBo">
+        <method signature="TestBrowser.testChromeInit()[pri:0, instance:org.ealancas.test.TestBrowser@17a7f733]" name="testChromeInit" class="org.ealancas.test.TestBrowser"/>
+      </group> <!-- orderBo -->
+      <group name="save">
+        <method signature="TestBrowser.testChromeInit()[pri:0, instance:org.ealancas.test.TestBrowser@17a7f733]" name="testChromeInit" class="org.ealancas.test.TestBrowser"/>
+      </group> <!-- save -->
+    </groups>
+    <test started-at="2023-08-21T14:27:50 CST" name="functional-testing" finished-at="2023-08-21T14:27:59 CST" duration-ms="9413">
+      <class name="org.ealancas.test.TestBrowser">
+        <test-method signature="testChromeInit()[pri:0, instance:org.ealancas.test.TestBrowser@17a7f733]" started-at="2023-08-21T14:27:50 CST" name="testChromeInit" finished-at="2023-08-21T14:27:59 CST" duration-ms="9360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testChromeInit -->
+      </class> <!-- org.ealancas.test.TestBrowser -->
+    </test> <!-- functional-testing -->
+  </suite> <!-- Default Suite -->
+</testng-results>
