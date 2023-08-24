@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'mvn validate'
-                sh 'mvn test'
+                sh 'mvn test -DappEnv=ci'
             }
         }
 

@@ -9,5 +9,8 @@
         <module name="functional-testing" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="selenium-functional-testing" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
