@@ -8,6 +8,8 @@ import java.util.Properties;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+
+
 public class ReadProperties {
     private String propertiesPath = this.getPropertiesPath();
     private static final Logger logger = LogManager.getLogger(ReadProperties.class);
