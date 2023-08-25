@@ -12,7 +12,7 @@ public class Chrome implements Browser {
     private Properties properties = ReadProperties.getInstance().getProperties();
     private ChromeOptions options = new ChromeOptions();
     public Chrome() {
-        if (Boolean.valueOf(properties.getProperty("selenium.chrome.headless"))) options.addArguments("--headless=new");;
+        if (Boolean.valueOf(properties.getProperty("selenium.chrome.headless"))) options.addArguments("--headless=new");
         System.setProperty("webdriver.chrome.driver", properties.getProperty("ci.selenium.chrome.path"));
         driver = new ChromeDriver(options);
     }

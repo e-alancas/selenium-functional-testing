@@ -43,7 +43,6 @@ public class ReadProperties {
 
     private String getPropertiesPath() {
         String appEnv = System.getProperty("app.env", "local");
-        logger.info("app env: " + appEnv);
         switch (appEnv) {
             case "ci":
                 return "src/main/resources/ci/ci.properties";

@@ -14,5 +14,4 @@ public class TestBrowser {
         Thread.sleep(5000);
         chrome.getDriver().quit();
     }
-
 }

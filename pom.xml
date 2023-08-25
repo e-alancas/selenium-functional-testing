@@ -24,7 +24,7 @@
                     <version>2.22.2</version>
                     <configuration>
                         <systemPropertyVariables>
-                            <app.env>${appEnv}</app.env>
+                            <app.env>local</app.env>
                         </systemPropertyVariables>
                         <suiteXmlFiles>
                             <suiteXmlFile>

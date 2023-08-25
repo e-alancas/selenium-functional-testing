@@ -14,7 +14,6 @@ public class TestConfig {
     @BeforeSuite
     public void testBeforeSuite() {
         System.out.println("testBeforeSuite()");
-        Properties props = ReadProperties.getInstance().getProperties();
     }
 
     @AfterSuite
