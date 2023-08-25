@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70215328-272c-479e-8a3f-7a7b2fb2f859" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ci/LICENSE.chromedriver" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/browsers/Chrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/browsers/Chrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/properties/ReadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/properties/ReadProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/ealancas/test/TestBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ealancas/test/TestBrowser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/ealancas/test/TestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/ealancas/test/TestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
