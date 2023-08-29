@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="70215328-272c-479e-8a3f-7a7b2fb2f859" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,14 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestGoogleTitle.verifyHomepageTitle">
+  <component name="RunManager" selected="TestNG.TestGoogleTitle">
+    <configuration name="Main test" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.ealancas.functionaltesting.Main" />
+      <module name="functional-testing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -126,15 +134,25 @@
     </configuration>
     <configuration name="TestGoogleTitle" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="functional-testing" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.ealancas.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="org.ealancas.test" />
       <option name="MAIN_CLASS_NAME" value="org.ealancas.test.TestGoogleTitle" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -160,6 +178,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Main test" />
       <item itemvalue="Application.Main" />
       <item itemvalue="TestNG.TestGoogleTitle" />
       <item itemvalue="TestNG.TestGoogleTitle.verifyHomepageTitle" />
@@ -168,8 +187,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestGoogleTitle.verifyHomepageTitle" />
         <item itemvalue="TestNG.TestGoogleTitle" />
+        <item itemvalue="TestNG.TestGoogleTitle.verifyHomepageTitle" />
         <item itemvalue="TestNG.TestBrowser" />
         <item itemvalue="TestNG.TestBrowser.testChromeInit" />
       </list>

@@ -16,5 +16,6 @@ package org.ealancas.functionaltesting;
 public class Main {
 
     public static void main(String[] args) {
+        System.out.println("hello this is a test for the meeting!!");
     }
 }
