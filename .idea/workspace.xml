@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70215328-272c-479e-8a3f-7a7b2fb2f859" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/browsers/Browser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/browsers/Browser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/browsers/BrowserFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/browsers/BrowserFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/browsers/Chrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/browsers/Chrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/properties/ReadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/properties/ReadProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ci/ci.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ci/ci.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/local/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/local/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/ealancas/test/TestConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/ealancas/test/TestDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/ealancas/test/TestOrder.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/resources/test-run-testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/test-run-testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +76,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestBrowser">
+  <component name="RunManager" selected="TestNG.TestGoogleTitle.verifyHomepageTitle">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -133,13 +132,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestGoogleTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="functional-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ealancas.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ealancas.test" />
+      <option name="MAIN_CLASS_NAME" value="org.ealancas.test.TestGoogleTitle" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGoogleTitle.verifyHomepageTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="functional-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ealancas.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ealancas.test" />
+      <option name="MAIN_CLASS_NAME" value="org.ealancas.test.TestGoogleTitle" />
+      <option name="METHOD_NAME" value="verifyHomepageTitle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="TestNG.TestGoogleTitle" />
+      <item itemvalue="TestNG.TestGoogleTitle.verifyHomepageTitle" />
       <item itemvalue="TestNG.TestBrowser" />
       <item itemvalue="TestNG.TestBrowser.testChromeInit" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestGoogleTitle.verifyHomepageTitle" />
+        <item itemvalue="TestNG.TestGoogleTitle" />
         <item itemvalue="TestNG.TestBrowser" />
         <item itemvalue="TestNG.TestBrowser.testChromeInit" />
       </list>

@@ -18,4 +18,10 @@
             <class name="org.ealancas.test.TestWebElementActions" />
         </classes>
     </test>
+
+    <test name="Google">
+        <classes>
+            <class name="org.ealancas.test.TestGoogleTitle" />
+        </classes>
+    </test>
 </suite>

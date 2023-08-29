@@ -1,6 +1,0 @@
-2023-08-25 09:57:14,190 INFO o.e.f.p.ReadProperties [main] app env: local
-2023-08-25 09:57:14,193 ERROR o.e.f.p.ReadProperties [main] this is an error!!!!!!!
-2023-08-25 09:57:14,193 INFO o.e.f.p.ReadProperties [main] path: src/main/resources/local/local.properties
-2023-08-25 13:47:09,954 INFO o.e.f.p.ReadProperties [main] path: src/main/resources/local/local.properties
-2023-08-25 13:48:44,289 INFO o.e.f.p.ReadProperties [main] path: src/main/resources/local/local.properties
-2023-08-25 15:21:44,627 INFO o.e.f.p.ReadProperties [main] path: src/main/resources/local/local.properties

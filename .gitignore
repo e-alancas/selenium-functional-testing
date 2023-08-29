@@ -39,3 +39,6 @@ build/
 
 ### TestNG Output ###
 test-output/
+
+### Log4j2 Output ###
+logs/
