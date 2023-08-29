@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.ealancas.functionaltesting"},{"l":"org.ealancas.functionaltesting.browsers"},{"l":"org.ealancas.functionaltesting.properties"}];updateSearchResults();
