@@ -1,24 +1,42 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'mvn-3-9-4'
+        jdk 'java-11'
+    }
+
     stages {
-        stage('Build') {
+        stage ('Initialize') {
             steps {
-                withMaven {
-                    sh 'mvn validate'
-                }
+                slackSend (color: "good", message: "Build started: ${env.JOB_NAME} #${env.BUILD_NUMBER}")
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                    google-chrome --version
+                '''
             }
         }
-        stage('Test') {
+
+        stage ('Test') {
             steps {
-                withMaven {
-                    sh 'mvn test'
-                }
+                slackSend (color: "good", message: "Tests started at ${env.JOB_NAME} #${env.BUILD_NUMBER}")
+                sh 'mvn test -DappEnv=ci'
             }
         }
-        stage('Deploy') {
+
+        stage ('Send Reports') {
             steps {
-                echo 'Deploying....'
+                slackSend (color: "good", message: "Tests done. Compressing reports: ${env.JOB_NAME} #${env.BUILD_NUMBER}")
+            }
+        }
+
+    }
+
+    post {
+        success {
+            script {
+                slackSend (channel: "selenium-automation", message: "Build ${env.JOB_NAME} ${env.BUILD_NUMBER} passed successfully", color: "good")
             }
         }
     }

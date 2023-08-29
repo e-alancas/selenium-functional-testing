@@ -1,24 +1,27 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="TestAll">
-
-    <test name="order">
-        <classes>
-            <class name="org.ealancas.test.TestConfig" />
-            <class name="org.ealancas.test.TestOrder" />
-        </classes>
-    </test>
-
-    <test name="database">
-        <classes>
-            <class name="org.ealancas.test.TestConfig" />
-            <class name="org.ealancas.test.TestDatabase" />
-        </classes>
-    </test>
-
     <test name="browser">
         <classes>
             <class name="org.ealancas.test.TestBrowser" />
+        </classes>
+    </test>
+
+    <test name="findElement">
+        <classes>
+            <class name="org.ealancas.test.TestFindElement" />
+        </classes>
+    </test>
+
+    <test name="webElementActions">
+        <classes>
+            <class name="org.ealancas.test.TestWebElementActions" />
+        </classes>
+    </test>
+
+    <test name="Google">
+        <classes>
+            <class name="org.ealancas.test.TestGoogleTitle" />
         </classes>
     </test>
 </suite>
