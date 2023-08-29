@@ -28,8 +28,6 @@ pipeline {
         stage ('Send Reports') {
             steps {
                 slackSend (color: "good", message: "Tests done. Compressing reports: ${env.JOB_NAME} #${env.BUILD_NUMBER}")
-                slackUploadFile (filePath: "./reports.zip")
-                //sh zip
             }
         }
 
@@ -38,7 +36,7 @@ pipeline {
     post {
         success {
             script {
-                slackSend(channel: "selenium-automation", message: "my-first-pipeline-slack passed successfully")
+                slackSend (channel: "selenium-automation", message: "Build ${env.JOB_NAME} ${env.BUILD_NUMBER} passed successfully", color: "good")
             }
         }
     }
