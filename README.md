@@ -112,12 +112,12 @@ Of course, this template will serve as a base project and your needs may be diff
 
 ### Local
    ```sh
-   mvn test -D mvn test -DappEnv=local
+   mvn test
    ```
 ### CI (Jenkins)
 Refer to [Jenkinsfile](https://github.com/e-alancas/selenium-functional-testing/blob/main/Jenkinsfile)
    ```sh
-   mvn test -D mvn test -DappEnv=ci
+   mvn test -DappEnv=ci
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
