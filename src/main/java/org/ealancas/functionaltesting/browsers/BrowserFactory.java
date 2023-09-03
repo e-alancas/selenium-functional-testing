@@ -20,8 +20,8 @@ package org.ealancas.functionaltesting.browsers;
  * @author Eliecer Alan
  * @author ealancascante@gmail.com
  * @author <a href="https://github.com/e-alancas">GitHub profile</a>
- * @version 1.0
- * @since 2023-08-25
+ * @version 1.1
+ * @since 2023-09-03
  */
 public class BrowserFactory {
 
@@ -30,6 +30,7 @@ public class BrowserFactory {
      * @param browserName The name of the browser. Options are:
      *                    <ul>
      *                      <li>Chrome</li>
+     *                      <li>Firefox</li>
      *                    </ul>
      * @return Browser instance
      */
@@ -41,6 +42,8 @@ public class BrowserFactory {
         switch (browserName.toLowerCase()) {
             case "chrome":
                 return new Chrome();
+            case "firefox":
+                return new Firefox();
             default:
                 return null;
         }
