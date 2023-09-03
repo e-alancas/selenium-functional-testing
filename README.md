@@ -125,10 +125,11 @@ Refer to [Jenkinsfile](https://github.com/e-alancas/selenium-functional-testing/
 ## Roadmap
 
 - [ ] Add Safari browser support
-- [ ] Add Firefox browser support
+- [X] Add Firefox browser support
 - [ ] Add Additional Test Cases Templates w/ Examples
 - [ ] Create a multi-environment support for base urls (Dev, QA, Stage, Prod)
 - [ ] Custom Methods for waiting async elements in the markup during test executions
+- [ ] Create Screenshots module
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
