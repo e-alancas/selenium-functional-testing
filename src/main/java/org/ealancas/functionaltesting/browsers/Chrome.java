@@ -44,5 +44,4 @@ public class Chrome implements Browser {
         driver.manage().window().maximize();
         return driver;
     }
-
 }
