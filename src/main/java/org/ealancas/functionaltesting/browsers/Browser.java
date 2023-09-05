@@ -15,8 +15,8 @@ import org.openqa.selenium.WebDriver;
  * @author Eliecer Alan
  * @author ealancascante@gmail.com
  * @author <a href="https://github.com/e-alancas">GitHub profile</a>
- * @version 1.0
- * @since 2023-08-25
+ * @version 1.1
+ * @since 2023-09-03
  */
 
 public interface Browser {
@@ -26,4 +26,5 @@ public interface Browser {
      * @return org.openqa.selenium.WebDriver instance
      */
     public WebDriver getDriver();
+    public WebDriver maximizeWindow();
 }

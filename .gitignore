@@ -42,3 +42,6 @@ test-output/
 
 ### Log4j2 Output ###
 logs/
+
+### Screenshots Evidences ###
+evidence/

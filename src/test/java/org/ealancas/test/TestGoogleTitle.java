@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.ealancas.functionaltesting.browsers.Browser;
 import org.ealancas.functionaltesting.browsers.BrowserFactory;
 import org.ealancas.functionaltesting.properties.ReadProperties;
+import org.ealancas.functionaltesting.screenshots.BrowserScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -12,10 +13,15 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 import org.testng.Assert;
 
+import java.io.IOException;
+
 public class TestGoogleTitle {
 
     // Log4j2 Logger
     private static final Logger logger = LogManager.getLogger(ReadProperties.class);
+
+    // Browser Screenshot
+    private static final BrowserScreenshot browserScreenshot = BrowserScreenshot.getInstance();
 
     // Create all variables you may need
     private String baseUrl = "https://www.google.com";
@@ -41,7 +47,10 @@ public class TestGoogleTitle {
     }
 
     @AfterTest
-    public void terminateBrowser() {
+    public void terminateBrowser() throws IOException {
+        Reporter.log("Taking Screenshot", true);
+        browserScreenshot.getFullScreenshot(driver, this.getClass().getSimpleName());
+
         Reporter.log("Closing Browser", true);
         driver.close();
     }

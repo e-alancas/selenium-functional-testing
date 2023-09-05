@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70215328-272c-479e-8a3f-7a7b2fb2f859" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ealancas/functionaltesting/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ci/ci.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ci/ci.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +38,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/eliecer.alan/projects/personal/selenium-functional-testing/src/main/resources&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "develop",
+    "last_opened_file_path": "/Users/eliecer.alan/projects/personal/selenium-functional-testing/src/main/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
@@ -60,6 +60,7 @@
       <recent name="$PROJECT_DIR$/src/main/resources/ci" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.ealancas.functionaltesting.browsers" />
       <recent name="org.ealancas.test" />
     </key>
   </component>
@@ -69,7 +70,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestGoogleTitle">
+  <component name="RunManager" selected="TestNG.TestVwHomepage">
     <configuration name="Main test" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.ealancas.functionaltesting.Main" />
       <module name="functional-testing" />
@@ -114,7 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBrowser.testChromeInit" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGoogleTitle (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="functional-testing" />
       <extension name="coverage">
         <pattern>
@@ -123,9 +124,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.ealancas.test" />
-      <option name="MAIN_CLASS_NAME" value="org.ealancas.test.TestBrowser" />
-      <option name="METHOD_NAME" value="testChromeInit" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="org.ealancas.test.TestGoogleTitle" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -177,20 +177,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestVwHomepage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="functional-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.ealancas.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.ealancas.test" />
+      <option name="MAIN_CLASS_NAME" value="org.ealancas.test.TestVwHomepage" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main test" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="TestNG.TestGoogleTitle (1)" />
+      <item itemvalue="TestNG.TestVwHomepage" />
       <item itemvalue="TestNG.TestGoogleTitle" />
       <item itemvalue="TestNG.TestGoogleTitle.verifyHomepageTitle" />
       <item itemvalue="TestNG.TestBrowser" />
-      <item itemvalue="TestNG.TestBrowser.testChromeInit" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestGoogleTitle" />
+        <item itemvalue="TestNG.TestVwHomepage" />
         <item itemvalue="TestNG.TestGoogleTitle.verifyHomepageTitle" />
+        <item itemvalue="TestNG.TestGoogleTitle (1)" />
+        <item itemvalue="TestNG.TestGoogleTitle" />
         <item itemvalue="TestNG.TestBrowser" />
-        <item itemvalue="TestNG.TestBrowser.testChromeInit" />
       </list>
     </recent_temporary>
   </component>

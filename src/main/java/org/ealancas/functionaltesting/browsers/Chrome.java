@@ -20,8 +20,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
  * @author Eliecer Alan
  * @author ealancascante@gmail.com
  * @author <a href="https://github.com/e-alancas">GitHub profile</a>
- * @version 1.0
- * @since 2023-08-25
+ * @version 1.1
+ * @since 2023-09-03
  */
 
 public class Chrome implements Browser {
@@ -32,9 +32,16 @@ public class Chrome implements Browser {
         if (Boolean.valueOf(properties.getProperty("selenium.chrome.headless"))) options.addArguments("--headless=new");
         System.setProperty("webdriver.chrome.driver", properties.getProperty("selenium.chrome.path"));
         driver = new ChromeDriver(options);
+        if (Boolean.valueOf(properties.getProperty("selenium.chrome.maximize"))) this.maximizeWindow();
     }
     @Override
     public WebDriver getDriver() {
+        return driver;
+    }
+
+    @Override
+    public WebDriver maximizeWindow() {
+        driver.manage().window().maximize();
         return driver;
     }
 }
